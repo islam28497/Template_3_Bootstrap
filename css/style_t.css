@@ -1,0 +1,129 @@
+/* 1.global style  */
+/* 2.common style */
+/* general style.............................................................................. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* small screen */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #777 !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #CCCCFF !important;
+}
+a:hover{
+    color: white !important;
+}
+ul{
+    list-style: none;
+}
+/* :root{ */
+    /* --main-color:; */
+    /* --main-transition:; */
+    /* --section-padding:; */
+    /* --bg-color:; */
+/* } */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+.carousel-inner h1{
+    text-shadow: 1px 1px #333;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 7px;
+}
+.card-body h2{
+    font-size: 40px;
+}
+code{
+    font-size: 18px !important;
+}
+.myicon{
+    height:30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 17px;
+}
+.fixedimg{
+background-attachment: fixed;
+background-size: cover;
+height: 250px;
+}
+.fixedimg1{
+background-image: url(../pictures/خلفيات-كمبيوتر-موقع-محيط-_182048401_-__.jpg);
+}
+.fixedimg2{
+background-image: url(../pictures/images.jpg);
+}
+.btnbefo{
+    position: relative;
+    left: 30px;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent lightblue transparent;
+top: 20px;
+left: 13px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 80px;
+background-color: lightblue;
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btnbefo:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px white,
+                -10px -10px 20px white;
+}
+.dropdown-menu li a{
+    text-shadow: 1px 1px 0px black;
+}
